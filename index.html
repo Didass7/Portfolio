@@ -4,32 +4,48 @@
     <meta charset="UTF-8">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <header class="header">
-        <img src="imagens/logo.png" class="logo" alt="Logotipo" width=10%>
-        <nav class="navbar">
-                <a href="index.html" class="ativo">Inicio</a>
-                <a href="habilidades.html">Habilidades</a>
-                <a href="projetos.html">Projetos</a>
-                <a href="experiencias.html">Experiências</a>
-                <a href="autor.html">Autor</a>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            <img src="imagens/logo.png">
+            <ul class="links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="carreira_musical.html">Carreira Musical</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     
-    <section class="right-align">
+    <section class="homepage">
         <div class="titulo">
-            <h1><span class=span>Olá! eu sou o </span>Antonio Carreira</h1>
-            <h2>Desenvolvedor Front-End</h2>
+            <h1><span class=span>Olá! Eu sou o </span>Antonio Carreira</h1>
+            <h3>Desenvolvedor Front-End</h3>
             <p>Um apaixonado Desenvolvedor Front-End com amplo conhecimento em 
                 diversas linguagens e tecnologias. Sua paixão pelo design e 
                 desenvolvimento de interfaces de utilizador dinâmicas o destaca como um
                  profissional excepcional neste campo em constante evolução.
-                 No seu tempo livre Antonio Carreiras também </p>
-
+                 No seu tempo livre Antonio Carreiras também tem uma paixão por música. </p>
+                    <div class="btn-box">
+                        <a href="mailto: regiconcerto@regiconcerto.com" class="btn">Contacto</a>
+                        <a href="projetos.html" class="btn">Projetos</a>
+                    </div>
         </div> 
-        <img src="imagens/toni.png">
+        <div class="btn-sociais">
+            <a href="https://www.facebook.com/tonycarreiraoficial?locale=pt_PT"><i class="bx bxl-facebook"></i></a>
+            <a href="mailto: regiconcerto@regiconcerto.com"><i class="bx bxl-gmail"></i></a>
+            <a href="https://www.instagram.com/tonycarreiraoficial/?hl=pt"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.youtube.com/@tonycarreiraoficial"><i class='bx bxl-youtube'></i></a>
+
+        </div>
     </section>
     
     <section>

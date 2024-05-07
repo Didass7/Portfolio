@@ -1,53 +1,276 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
-
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Jost', sans-serif;
 }
+
 body {
     background-color: #1a1a21;
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-header {
-    display: flex;
-    background-color: #1a1a21;
-    justify-content: space-between;
-    align-items:center;
-    margin-right: 150px;
-    margin-left: 100px;
+li {
+    list-style: none;
 }
 
-.navbar a.active {
-    color: #44449d;
-}
-
-.navbar a {
-    font-size: 20px;
-    color: white;
+a {
     text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+a:hover {
+    color: rgb(228, 188, 79);
+}
+
+header {
+    position: relative;
+    background-color: #1a1a21;
+}
+
+nav {
+    top: 10%;
+    height: 80px;
+    background-color: transparent;
+
+}
+
+nav img {
+    width: 10%;
+    position:absolute;
+    left: 10%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
     font-weight: 500;
-    margin-left:100px;
-    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
 }
 
-.navbar a:hover {
-    color: #414156;
+label #btn
+label #cancel {
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
-.right-align img {
-    width: 50%;
+#check {
+    display: none;
 }
 
-.right-align {
+@media (max-width: 1180px) {
+    nav img {
+        left: 8%;
+    }
+}
+
+@media (max-width: 944px) {
+    nav img {
+        left: 6%;
+        top: 20px;
+        width: 130px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 860px) {
+    label #btn {
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #34343d;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ ul {
+        display: block;
+    }
+}
+
+.homepage {
+    height: 75vh;
+    background: url("imagens/toni.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 100px;
+    align-items: center;
+    padding: 0 10% ;
+}
+
+.titulo {
+    max-width: 750px;
+}
+
+.titulo h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 56px; 
+    font-weight: 700;
+    color:rgb(228, 188, 79);
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+.span {
+    color: white;
+}
+
+.titulo h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 32px; 
+    color:rgb(228, 188, 79);
+    margin-top: 0;
+}
+
+.titulo p {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px; 
+    color:white;
+    margin: 20px 0 40px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+
+    width: 345px;
+    height: 50px;
+   
+}
+
+.btn-box a {
+    position:relative;
+    font-family: 'Jost', sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    background-color: rgb(228, 188, 79);
+    border: 2px solid rgb(228, 188, 79);
+    border-radius: 8px;
+    font-size: 25px;
+    color: #414156;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: rgb(228, 188, 79);
+}
+
+.btn-box a:nth-child(2) {
+    background-color: transparent;
+    color: rgb(228, 188, 79);
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #1a1a21;
+}
+
+.btn-box a:nth-child(2)::before {
+    background-color: rgb(228, 188, 79);
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1a1a21;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.btn-sociais {
+    position: absolute;
+    bottom: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-sociais a {
+    position:relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid rgb(228, 188, 79);
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(228, 188, 79);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}   
+
+.btn-sociais a:hover {
+    color: #1a1a21;
+}
+
+.btn-sociais a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(228, 188, 79);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-sociais a:hover::before {
+    width: 100%;
 }
 
 footer {
@@ -57,37 +280,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-.titulo {
-    text-align: left;
-    padding: 20px;
-    margin-top: 150px;
-    padding-left: 0px;
-    margin-left: 30px;
-}
-
-.titulo h1 {
-    font-family: 'Jost', sans-serif;
-    font-size: 3em; 
-    color:rgb(228, 188, 79);
-    margin-top: 0;
-}
-
-.span {
-    color: white;
-}
-
-.titulo h2 {
-    font-family: 'Jost', sans-serif;
-    font-size: 2em; 
-    color:rgb(228, 188, 79);
-    margin-top: 0;
-}
-
-.titulo p {
-    font-family: 'Jost', sans-serif;
-    font-size: 1em; 
-    color:white;
-    margin-top: 0;
 }
