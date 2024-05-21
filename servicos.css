@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    background-color: #1a1a21;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a:hover {
+    color: rgb(228, 188, 79);
+}
+
+a.nav-link {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+a.nav-link:hover {
+    color: rgb(228, 188, 79);
+}
+
+.navbar-dark{
+    background-color: #1a1a21;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+nav img {
+    width: 10%;
+    position:absolute;
+    left: 10%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(220, 235, 8);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Area do titulo*/
+.homepage {
+    height: 20vh;
+    background: #1a1a21;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Adicione esta linha */
+    align-items: center;
+    padding: 0 10%;
+    width: 100vw;
+}
+
+.titulo {
+    max-width: 750px;
+}
+
+.titulo h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 56px; 
+    font-weight: 700;
+    color:rgb(228, 188, 79);
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+.span {
+    color: white;
+}
+
+
+
+/*Area de serviços*/
+
+.body {
+    background-color: #1a1a21;
+}
+
+.services {
+    background-color: #1a1a21;
+    padding: 5rem 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.services-container {
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0%;
+    background-color: #1a1a21;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.service-box {
+    position: relative;
+    background-color: #1a1a21;
+    height: 250px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(228, 188, 79);
+    transition: .5s;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid rgb(228, 188, 79);
+}
+
+.service-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1a1a21;
+    z-index: -1;
+    transition: .5s;
+}
+
+.service-box:hover {
+    background-color: rgb(228, 188, 79);
+    color: #1a1a21;
+}
+
+.service-box:hover::before {
+    width: 100%;
+}
+
+.service-box .service-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: center;
+    align-items: baseline;
+    padding: 5em;
+}
+
+.service-info h4 {
+    font-family: 'Jost', sanss-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.service-info p{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-height: 100px;
+    margin:auto;
+}
+
+@media (max-width: 991px) {
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .services{
+        padding-bottom: 7rem;
+    }
+}
+
+@media (max-width: 895px) {
+    .services-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.footer {
+    background-color: #1a1a21;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
