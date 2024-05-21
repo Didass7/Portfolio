@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: transparent;
+    background-color: #1a1a21;
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -32,7 +32,7 @@ a.nav-link:hover {
 }
 
 .navbar-dark{
-    background-color: #545486;
+    background-color: #1a1a21;
 }
 
 nav {
@@ -63,8 +63,13 @@ nav ul li a {
     text-transform: uppercase;
 }
 
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .homepage {
-    height: 75vh;
+    height: 90vh;
     background: url("imagens/toni.jpg") no-repeat;
     background-size: cover;
     background-position: center;
@@ -216,10 +221,15 @@ nav ul li a {
 }
 
 footer {
+    padding: 20px 0;
     background-color: #1a1a21;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+footer p {
+    color: white;
+    margin-bottom: .25rem;
+}
+
+footer a {
+    color: white;
 }
