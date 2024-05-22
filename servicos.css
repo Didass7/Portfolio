@@ -7,11 +7,6 @@
     font-family: 'Jost', sans-serif;
 }
 
-body {
-    background-color: #1a1a21;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
 
 a:hover {
     color: rgb(228, 188, 79);
@@ -72,12 +67,10 @@ nav ul li a {
 .homepage {
     height: 20vh;
     background: #1a1a21;
-    background-size: cover;
-    background-position: center;
     display: flex;
-    justify-content: center; /* Adicione esta linha */
+    justify-content: center; 
     align-items: center;
-    padding: 0 10%;
+    padding: 0 1%;
     width: 100vw;
 }
 
@@ -90,7 +83,7 @@ nav ul li a {
     font-size: 56px; 
     font-weight: 700;
     color:rgb(228, 188, 79);
-    margin-top: 0;
+    margin-top: 20%;
     line-height: 1.2;
 }
 
@@ -102,112 +95,67 @@ nav ul li a {
 
 /*Area de serviços*/
 
-.body {
+body {
+    width: 100vw;
+    font-family: Arial, sans-serif;
     background-color: #1a1a21;
+    height: 100%;
+    
 }
 
-.services {
+.fundo {
     background-color: #1a1a21;
-    padding: 5rem 0;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-}
-
-.services-container {
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-    padding: 0%;
-    background-color: #1a1a21;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-}
-
-.service-box {
-    position: relative;
-    background-color: #1a1a21;
-    height: 250px;
-    width: 70%;
     display: flex;
+    height:70vh;
+}
+
+.container {
+    background-color: #1a1a21;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.box1, .box2, .box3 {
+    width: 300px;
+    height: 320px;
+    margin: 15px;
+    padding: 5px;
     color: rgb(228, 188, 79);
-    transition: .5s;
-    overflow: hidden;
-    border-radius: 10px;
-    border: 5px solid rgb(228, 188, 79);
-}
-
-.service-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #1a1a21;
-    z-index: -1;
-    transition: .5s;
-}
-
-.service-box:hover {
-    background-color: rgb(228, 188, 79);
-    color: #1a1a21;
-}
-
-.service-box:hover::before {
-    width: 100%;
-}
-
-.service-box .service-info{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: center;
-    align-items: baseline;
-    padding: 5em;
-}
-
-.service-info h4 {
-    font-family: 'Jost', sanss-serif;
-    font-size: 2.5em;
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-.service-info p{
-    font-family: 'Jost', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    max-height: 100px;
-    margin:auto;
-}
-
-@media (max-width: 991px) {
-    section {
-        padding: 10rem 3% 2rem;
-    }
-
-    .services{
-        padding-bottom: 7rem;
-    }
-}
-
-@media (max-width: 895px) {
-    .services-container {
-        grid-template-columns: repeat(1,1fr);
-    }
-}
-
-.footer {
-    background-color: #1a1a21;
-    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    transition: .3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box1:hover, .box2:hover, .box3:hover {
+    background-color: rgb(228, 188, 79);
+    color:#1a1a21;
+}
+
+h2 {
+    letter-spacing: 2px;
+    margin: 0 0 .6rem 0;
+}
+
+.box1 p, .box2 p, .box3 p {
+    line-height: 1.6;
+    font-size: 1.4rem;
+    padding: 0 10px;
+    margin: 0;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #1a1a21;
+}
+
+footer p {
+    color: white;
+    margin-bottom: .25rem;
+}
+
+footer a {
+    color: white;
 }
