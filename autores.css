@@ -119,7 +119,6 @@ nav ul li a {
 
 .main{
     width:1200px;
-    max-width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -183,6 +182,12 @@ nav ul li a {
 }
 /*mapa*/
 
+.mapa {
+    background-color: #1a1a21;
+    display: flex;
+    justify-content: center;
+}
+
 .container span{
     color: rgb(255, 255, 255);
 }
@@ -207,7 +212,6 @@ nav ul li a {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    position: relative; 
 }
 
 
