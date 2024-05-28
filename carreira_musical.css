@@ -140,8 +140,15 @@ nav ul li a {
 }
 
 .checkpoint p {
+    font-size: 1.3em;
     line-height: 27px;
     color: white;
+}
+
+.checkpoint h1 {
+    font-size: 2em;
+    color: rgb(228, 188, 79);
+    margin-bottom: 0.5em;
 }
 
 .checkpoint:nth-child(odd){
