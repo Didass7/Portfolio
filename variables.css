@@ -1,0 +1,53 @@
+:root {
+  /* Colors */
+  --primary-color: rgb(228, 188, 79);
+  --primary-color-hover: rgb(248, 208, 99);
+  --primary-color-shadow: rgba(228, 188, 79, 0.4);
+  --dark-bg: #1a1a21;
+  --darker-bg: #101014;
+  --text-light: #ffffff;
+  --text-dark: #414156;
+  --accent-color: #e4bc4f;
+  --accent-color-hover: #f8d063;
+  --nav-link-color: white;
+  --nav-link-hover: var(--primary-color);
+
+  /* Typography */
+  --font-primary: 'Jost', sans-serif;
+  --font-size-base: 16px;
+  --font-size-h1: 3.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+  --font-size-nav: 1.5rem;
+  --font-size-p: 1.1rem;
+  --line-height-base: 1.6;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 5rem;
+  --section-padding: 4rem 0;
+  --container-padding: 0 10%;
+
+  /* Transitions */
+  --transition-default: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Border Radius */
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-round: 50%;
+
+  /* Box Shadows */
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.2);
+  --glow-primary: 0 0 10px var(--primary-color-shadow);
+
+  /* Z-index levels */
+  --z-index-nav: 1000;
+  --z-index-modal: 2000;
+}
