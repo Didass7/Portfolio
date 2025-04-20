@@ -108,21 +108,7 @@ nav img {
     color: var(--nav-link-hover);
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: var(--primary-color);
-    transition: var(--transition-default);
-    transform: translateX(-50%);
-}
-
-.nav-link:hover::after {
-    width: 70%;
-}
+/* Animação de hover nos links de navegação removida */
 
 /* Button Styles */
 .btn {
@@ -144,29 +130,20 @@ nav img {
     z-index: 1;
 }
 
-.btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--primary-color);
-    transition: var(--transition-slow);
-    z-index: -1;
-}
-
 .btn:hover {
     color: var(--dark-bg);
-}
-
-.btn:hover::before {
-    width: 100%;
+    background-color: var(--primary-color);
 }
 
 .btn-box {
     display: flex;
     margin-top: var(--spacing-md);
+}
+
+.btn-sm {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
 }
 
 /* Footer Styles */
@@ -199,24 +176,9 @@ nav img {
     z-index: 1;
 }
 
-.social a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--primary-color);
-    transition: var(--transition-default);
-    z-index: -1;
-}
-
 .social a:hover {
     color: var(--dark-bg);
-}
-
-.social a:hover::before {
-    width: 100%;
+    background-color: var(--primary-color);
 }
 
 .footer ul {
@@ -270,11 +232,7 @@ nav img {
         --font-size-p: 1rem;
     }
 
-    .btn-box {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
+    /* Removida a configuração de flex-direction para os botões, agora gerenciada no style.css */
     .btn {
         margin-bottom: var(--spacing-sm);
         margin-right: 0;
